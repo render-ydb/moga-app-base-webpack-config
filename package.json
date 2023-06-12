@@ -1,0 +1,26 @@
+{
+  "name": "moga-app-base-webpack-config",
+  "version": "0.0.1-beta.1",
+  "description": "Basic webpack configuration used by Moga application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -w",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/render-ydb/moga-app-base-webpack-config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/render-ydb/moga-app-base-webpack-config/issues"
+  },
+  "homepage": "https://github.com/render-ydb/moga-app-base-webpack-config#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "typescript": "^5.1.3"
+  }
+}
