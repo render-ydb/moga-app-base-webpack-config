@@ -95,7 +95,7 @@ export = (mode: Mode = "development", config: Config) => {
   const babelConfig = getBabelConfig(mode === "development");
 
 
-  config.module.rule("{t|j}s?x")
+  config.module.rule("js|mjs|jsx|ts|tsx")
     .test(/\.(js|mjs|jsx|ts|tsx)$/)
     .exclude
     .add(EXCLUDE_REGX)
