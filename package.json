@@ -1,6 +1,6 @@
 {
   "name": "moga-app-base-webpack-config",
-  "version": "0.0.1-beta.9",
+  "version": "1.0.0",
   "description": "Basic webpack configuration used by Moga application",
   "main": "lib/index.js",
   "scripts": {
