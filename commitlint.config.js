@@ -1,1 +1,3 @@
-module.exports = { extends: ["@commitlint/config-conventional"] };
+const { getCommitlintConfig } = require('moga-lint');
+
+module.exports = getCommitlintConfig('common');

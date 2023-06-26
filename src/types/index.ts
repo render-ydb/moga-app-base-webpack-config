@@ -1,3 +1,4 @@
-import Chain = require("webpack-chain");
+import Chain = require('webpack-chain');
+
 export type Config = Chain;
-export type Mode = "development" | "none" | "production";
+export type Mode = 'development' | 'none' | 'production';

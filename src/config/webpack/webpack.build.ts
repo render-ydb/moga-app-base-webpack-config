@@ -1,17 +1,17 @@
-import { Config } from "../../types";
+import { Config } from '../../types';
 
 
-const TerserPlugin = require("terser-webpack-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 export = (config: Config) => {
   // disable devtool of mode prod build
   config.devtool(false);
 
-  config.mode("production");
+  config.mode('production');
   // uglify js file
   config.optimization
-    .minimizer("TerserPlugin")
+    .minimizer('TerserPlugin')
     .use(TerserPlugin, [{
       parallel: true,
       extractComments: false,
@@ -33,11 +33,11 @@ export = (config: Config) => {
 
   // optimize css file
   config.optimization
-    .minimizer("CssMinimizerPlugin")
+    .minimizer('CssMinimizerPlugin')
     .use(CssMinimizerPlugin, [{
       minimizerOptions: {
         preset: [
-          "default",
+          'default',
           {
             discardComments: {
               removeAll: true,
