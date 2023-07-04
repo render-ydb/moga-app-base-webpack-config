@@ -7,8 +7,8 @@ export = (isEnvDevelopment = false) => {
     ],
     plugins: [
       true
-            && isEnvDevelopment
-            && require.resolve('react-refresh/babel'),
+      && isEnvDevelopment
+      && require.resolve('react-refresh/babel'),
     ].filter(Boolean),
     babelrc: false,
     configFile: false,
